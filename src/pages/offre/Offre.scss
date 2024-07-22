@@ -1,0 +1,235 @@
+// Offre.scss
+
+.offre-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.offre-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.offre-table th, .offre-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.offre-table th {
+  background-color: purple;
+  color: #fff;
+}
+
+.offre-table td {
+  vertical-align: middle;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.actions button {
+  padding: 8px 16px;
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actions button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.actions button:hover {
+  background-color: purple;
+}
+
+.actions .ajouter-button {
+  background-color: #28a745;
+}
+
+.actions .ajouter-button:hover {
+  background-color: #218838;
+}
+
+.actions .modifier-button {
+  background-color: #ffc107;
+}
+
+.actions .modifier-button:hover {
+  background-color: #e0a800;
+}
+
+.actions .supprimer-button {
+  background-color: #dc3545;
+}
+
+.actions .supprimer-button:hover {
+  background-color: #c82333;
+}
+
+
+// AddOffre.scss
+
+.form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical; // Allow vertical resizing of textarea
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+  
+  p.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ccc;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.offre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .addOffre-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input, textarea {
+        margin-bottom: 10px;
+        padding: 8px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      label {
+        margin-bottom: 10px;
+
+        input[type="checkbox"] {
+          margin-left: 10px;
+        }
+      }
+
+      button {
+        padding: 10px 15px;
+        background-color: #5c1245;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #451244;
+        }
+      }
+    }
+  }
+
+  .offre-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    th {
+      background-color: #791d67;
+    }
+
+    td {
+      background-color: #fff;
+    }
+
+    .update {
+      margin-right: 10px;
+    }
+  }
+}
